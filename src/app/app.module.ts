@@ -4,13 +4,16 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 
+import { TruncatePipe } from './pipes/truncate.pipe';
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    TruncatePipe
   ],
   imports: [
     BrowserModule,
