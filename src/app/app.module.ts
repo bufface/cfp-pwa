@@ -8,6 +8,8 @@ import { TruncatePipe } from './pipes/truncate.pipe';
 
 import { LogrosService } from './services/logros.service';
 
+import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LogroComponent } from './logro/logro.component';
@@ -23,7 +25,8 @@ import { LogroComponent } from './logro/logro.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterialModule.forRoot()
+    MaterialModule.forRoot(),
+    AppRoutingModule
   ],
   providers: [LogrosService],
   bootstrap: [AppComponent]
