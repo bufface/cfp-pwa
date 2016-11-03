@@ -10,12 +10,14 @@ import { LogrosService } from './services/logros.service';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { LogroComponent } from './logro/logro.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    TruncatePipe
+    TruncatePipe,
+    LogroComponent
   ],
   imports: [
     BrowserModule,
