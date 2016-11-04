@@ -6,7 +6,8 @@ import { LogroComponent } from './logro/logro.component';
 @NgModule({
   imports: [
     RouterModule.forRoot([
-      {path: '', component: HomeComponent}
+      {path: '', component: HomeComponent},
+      {path: ':id', component: LogroComponent}
     ])
   ],
   exports: [RouterModule]
